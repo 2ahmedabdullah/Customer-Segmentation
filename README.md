@@ -11,7 +11,7 @@
 
 ![5](img/5.png)
 
-![6](img/6png)
+![6](img/6.png)
 
 ![7](img/7.png)
 
