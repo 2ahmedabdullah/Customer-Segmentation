@@ -27,6 +27,6 @@
 
 ![13](img/Average Number of Purchases by Segment.png)
 
-![14](img/Average Brand Choice by Segment.png)
+![14](Average Brand Choice by Segment.png)
 
 
