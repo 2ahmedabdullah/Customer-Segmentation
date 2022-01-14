@@ -84,14 +84,14 @@ segm_prop = segm_prop.rename(columns = {'N_Purchases': 'Segment Proportions'})
 segm_prop.head()
 
 
-plt.figure(figsize = (9, 6))
+plt.figure(figsize = (8, 5))
 plt.pie(segm_prop['Segment Proportions'],
         labels = ['Standard', 'Career-Focused', 'Fewer-Opportunities', 'Well-Off'],
         autopct = '%1.1f%%', 
         colors = ('b', 'g', 'r', 'orange'))
 
 plt.title('Segment Proportions')
-plt.savefig('Segmentation Proportions.png')
+plt.savefig('10.png')
 plt.show()
 
 #Purchase OCCASIION AND INDICES
@@ -100,7 +100,7 @@ segments_mean
 
 segments_std = df_purchase_descr.groupby(['Segment']).std()
 
-plt.figure(figsize = (9, 6))
+plt.figure(figsize = (8, 5))
 plt.bar(x = (0, 1, 2, 3),
         tick_label = ('Standard', 'Career-Focused', 'Fewer-Opportunities', 'Well-Off'), 
         height = segments_mean['N_Visits'],
@@ -109,12 +109,12 @@ plt.bar(x = (0, 1, 2, 3),
 plt.xlabel('Segment')
 plt.ylabel('Number of Store Visits')
 plt.title('Average Number of Store Visits by Segment')
-plt.savefig('Average Number of Store Visits by Segment.png')
+plt.savefig('11.png')
 plt.show()
 
 
 
-plt.figure(figsize = (9, 6))
+plt.figure(figsize = (8, 5))
 plt.bar(x = (0, 1, 2, 3),
         tick_label = ('Standard', 'Career-Focused', 'Fewer-Opportunities', 'Well-Off'), 
         height = segments_mean['N_Purchases'],
@@ -123,12 +123,12 @@ plt.bar(x = (0, 1, 2, 3),
 plt.xlabel('Segment')
 plt.ylabel('Purchase Incidences')
 plt.title('Number of Purchases by Segment')
-plt.savefig('Number of Purchases by Segment.png')
+plt.savefig('12.png')
 plt.show()
 
 
 
-plt.figure(figsize = (9, 6))
+plt.figure(figsize = (8, 5))
 plt.bar(x = (0, 1, 2, 3), 
         tick_label = ('Standard','Career Focused','Fewer Opportunities','Well-off'),
         height = segments_mean['Average_N_Purchases'], 
@@ -137,7 +137,7 @@ plt.bar(x = (0, 1, 2, 3),
 plt.xlabel('Segment')
 plt.ylabel('Purchase Incidences')
 plt.title('Average Number of Purchases by Segment')
-plt.savefig('Average Number of Purchases by Segment.png')
+plt.savefig('13.png')
 plt.show()
 
 
@@ -153,15 +153,16 @@ temp = brand_dummies.groupby(['ID'], as_index = True).mean()
 mean_brand_choice = temp.groupby(['Segment'], as_index = True).mean()
 
 
-
+plt.figure(figsize = (11, 7))
 sns.heatmap(mean_brand_choice,
             vmin = 0, 
             vmax = 1,
             cmap = 'PuBu',
             annot = True)
-plt.yticks([0.5, 1.5, 2.5, 3.5], ['Standard', 'Career-Focused', 'Fewer-Opportunities', 'Well-Off'], rotation = 0, fontsize = 9)
+plt.yticks([0.5, 1.5, 2.5, 3.5], ['Standard', 'Career-Focused', 'Fewer-Opportunities', 'Well-Off'], 
+           rotation = 45, fontsize = 9)
 plt.title('Average Brand Choice by Segment')
-plt.savefig('Average Brand Choice by Segment.png')
+plt.savefig('14.png')
 plt.show()
 
 

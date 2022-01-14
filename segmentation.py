@@ -33,26 +33,27 @@ df_segmentation.describe()
 #CORRELATION ESTIMATION
 df_segmentation.corr()
 
-plt.figure(figsize = (12, 9))
+plt.figure(figsize = (12,9))
 s = sns.heatmap(df_segmentation.corr(),
                annot = True, 
                cmap = 'RdBu',
                vmin = -1, 
                vmax = 1)
 s.set_yticklabels(s.get_yticklabels(), rotation = 0, fontsize = 12)
-s.set_xticklabels(s.get_xticklabels(), rotation = 90, fontsize = 12)
+s.set_xticklabels(s.get_xticklabels(), rotation = 45, fontsize = 12)
 plt.title('Correlation Heatmap')
-plt.savefig('Correlation Heatmap.png')
+plt.savefig('1.png')
 plt.show()
 
 
 #VISUALIZATION OF RAW DATA
-plt.figure(figsize = (12, 9))
+plt.figure(figsize = (8,5))
 plt.scatter(df_segmentation.iloc[:, 2], df_segmentation.iloc[:, 4])
 plt.xlabel('Age')
 plt.ylabel('Income')
-plt.savefig('Visualization of raw data.png')
 plt.title('Visualization of raw data')
+plt.savefig('2.png')
+
 
 #STANDARDIZATION
 scaler = StandardScaler()
@@ -61,7 +62,7 @@ segmentation_std = scaler.fit_transform(df_segmentation)
 #HIERARCHICAL CLUSTERING
 hier_clust = linkage(segmentation_std, method = 'ward')
 
-plt.figure(figsize = (12,9))
+plt.figure(figsize = (8,5))
 plt.title('Hierarchical Clustering Dendrogram')
 plt.xlabel('Observations')
 plt.ylabel('Distance')
@@ -70,7 +71,7 @@ dendrogram(hier_clust,
            p = 5,
            show_leaf_counts = False,
            no_labels = True)
-plt.savefig('hierarchical clustering.png')
+plt.savefig('3.png')
 plt.show()
 
 
@@ -83,12 +84,12 @@ for i in range(1,11):
     wcss.append(kmeans.inertia_)
 
 
-plt.figure(figsize = (12,9))
+plt.figure(figsize = (8,5))
 plt.plot(range(1, 11), wcss, marker = 'o', linestyle = '--')
 plt.xlabel('Number of Clusters')
 plt.ylabel('WCSS')
 plt.title('K-means Clustering')
-plt.savefig('K-means Clustering.png')
+plt.savefig('4.png')
 plt.show()
 
 
@@ -128,7 +129,7 @@ y_axis = df_segm_kmeans['Income']
 plt.figure(figsize = (12, 9))
 sns.scatterplot(x_axis, y_axis, hue = df_segm_kmeans['Labels'], palette = ['g', 'r', 'c', 'm'])
 plt.title('Segmentation K-means')
-plt.savefig('Segmentation K-means.png')
+plt.savefig('5.png')
 plt.show()
 
 
@@ -140,12 +141,12 @@ pca.fit(segmentation_std)
 
 pca.explained_variance_ratio_    
     
-plt.figure(figsize = (12,9))
+plt.figure(figsize = (8,5))
 plt.plot(range(1,8), pca.explained_variance_ratio_.cumsum(), marker = 'o', linestyle = '--')
 plt.title('PCA Explained Variance by Components')
 plt.xlabel('Number of Components')
-plt.savefig('PCA Variance.png')
 plt.ylabel('Cumulative Explained Variance')
+plt.savefig('6.png')
     
 pca = PCA(n_components = 3)
     
@@ -159,8 +160,9 @@ df_pca_comp = pd.DataFrame(data = pca.components_,
                            columns = df_segmentation.columns.values,
                            index = ['Component 1', 'Component 2', 'Component 3'])
 df_pca_comp
-    
-    
+   
+ 
+plt.figure(figsize = (11, 7.5)) 
 sns.heatmap(df_pca_comp,
             vmin = -1, 
             vmax = 1,
@@ -168,9 +170,10 @@ sns.heatmap(df_pca_comp,
             annot = True)
 plt.yticks([0.5, 1.5, 2.5], 
            ['Component 1', 'Component 2', 'Component 3'],
-           rotation = 0,
+           rotation = 45,
            fontsize = 9)
-plt.savefig('PCA Correlation Heatmap.png')
+plt.xticks(rotation = 30)
+plt.savefig('7.png')
 plt.show()
     
 
@@ -188,12 +191,12 @@ for i in range(1,11):
     wcss.append(kmeans_pca.inertia_)
 
 
-plt.figure(figsize = (12,9))
+plt.figure(figsize = (8,5))
 plt.plot(range(1, 11), wcss, marker = 'o', linestyle = '--')
 plt.xlabel('Number of Clusters')
 plt.ylabel('WCSS')
 plt.title('K-means with PCA Clustering')
-plt.savefig('K-means with PCA Clustering.png')
+plt.savefig('8.png')
 plt.show()
 
 
@@ -230,8 +233,8 @@ x_axis = df_segm_pca_kmeans['Component 2']
 y_axis = df_segm_pca_kmeans['Component 1']
 plt.figure(figsize = (12, 9))
 sns.scatterplot(x_axis, y_axis, hue = df_segm_pca_kmeans['Label'], palette = ['g', 'r', 'c', 'm'])
-plt.title('Clusters by PCA Components')
-plt.savefig('Segmentation K-means with PCA Clustering.png')
+plt.title('Segmentation by PCA Components')
+plt.savefig('9.png')
 plt.show()
 
 
