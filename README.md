@@ -1,7 +1,7 @@
 ## Customer-Segmentation
 
 Perform cluster analysis and dimensionality reduction to segment customers.
-We will use both hierarchical and flat clustering techniques, ultimately focusing on the K-means algorithm. Along the way, we will visualize the data appropriately to understand the methods. We will then employ Principal Components Analysis (PCA) through the scikit-learn package. Finally, we’ll combine the two (PCA+Kmeans) models to reach an even better insight about customers. 
+We will use both hierarchical and flat clustering techniques, ultimately focusing on the K-means algorithm. Along the way, we will visualize the data appropriately to understand the methods. We will then employ Principal Components Analysis (PCA) through the scikit-learn package. Finally, we’ll combine the two (PCA+Kmeans) models to obtain a better segmentation. 
 
 ![2](img/2.png)
 
