@@ -1,19 +1,11 @@
 ## Customer-Segmentation
 
-CORRELATION ESTIMATION
-![1](img/1.png)
 
 VISUALIZATION OF RAW DATA
 ![2](img/2.png)
 
 HIERARCHICAL CLUSTERING
 ![3](img/3.png)
-
-KMEANS CLUSTERING
-![4](img/4.png)
-
-#RESULT ANALYSIS
-![5](img/5.png)
 
 #PCA
 ![6](img/6.png)
