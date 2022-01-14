@@ -1,7 +1,7 @@
 # Customer-Segmentation
 
 
-![1](img/Correlation Heatmap.png)
+![1](img/Correlation_Heatmap.png)
 
 ![2](Visualization of raw data.png)
 
