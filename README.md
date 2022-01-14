@@ -1,8 +1,7 @@
 # Customer-Segmentation
 
-(img/Average Brand Choice by Segment.png)
 
-![1](img/Correlation Heatmap.png)
+![1](Customer-Segmentation/img/Correlation Heatmap.png)
 
 ![2](img/Visualization of raw data.png)
 
