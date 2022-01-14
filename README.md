@@ -1,32 +1,32 @@
 # Customer-Segmentation
 
 
-![1](img/Correlation_Heatmap.png)
+![1](img/1.png)
 
-![2](Visualization of raw data.png)
+![2](img/2.png)
 
-![3](img/hierarchical clustering.png)
+![3](img/3.png)
 
-![4](img/K-means Clustering.png)
+![4](img/4.png)
 
-![5](img/Segmentation K-means.png)
+![5](img/5.png)
 
-![6](img/PCA Variance.png)
+![6](img/6png)
 
-![7](img/PCA Correlation Heatmap.png)
+![7](img/7.png)
 
-![8](img/K-means with PCA Clustering.png)
+![8](img/8.png)
 
-![9](img/Segmentation K-means with PCA Clustering.png)
+![9](img/9.png)
 
-![10](img/Segmentation Proportions.png)
+![10](img/10.png)
 
-![11](img/Average Number of Store Visits by Segment.png)
+![11](img/11.png)
 
-![12](img/Number of Purchases by Segment.png)
+![12](img/12.png)
 
-![13](img/Average Number of Purchases by Segment.png)
+![13](img/13.png)
 
-![14](img/Average Brand Choice by Segment.png)
+![14](img/14.png)
 
 
