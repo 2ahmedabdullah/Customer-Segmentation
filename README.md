@@ -3,7 +3,7 @@
 
 ![1](Customer-Segmentation/img/Correlation Heatmap.png)
 
-![2](img/Visualization of raw data.png)
+![2](Visualization of raw data.png)
 
 ![3](img/hierarchical clustering.png)
 
