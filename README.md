@@ -19,7 +19,6 @@ We will show both hierarchical and flat clustering techniques, ultimately focusi
 ## Segment Interpretation
 Once segmented, customers’ behavior will require some interpretation. And we will use the descriptive statistics by brand and by segment and visualizing the findings. Through the descriptive analysis, we will form hypotheses about the segments, thus ultimately setting the ground for the subsequent modeling.
 
-#DESCRIPTIVE ANLAYSIS
 ![10](img/10.png)
 
 ![11](img/11.png)
