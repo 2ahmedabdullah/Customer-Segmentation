@@ -1,7 +1,7 @@
 ## Customer-Segmentation
 
 Perform cluster analysis and dimensionality reduction to segment customers.
-We will show both hierarchical and flat clustering techniques, ultimately focusing on the K-means algorithm. Along the way, we will visualize the data appropriately to understand the methods even further. We will then employ Principal Components Analysis (PCA) through the scikit-learn package. Finally, we’ll combine the two models to reach an even better insight about customers. 
+We will use both hierarchical and flat clustering techniques, ultimately focusing on the K-means algorithm. Along the way, we will visualize the data appropriately to understand the methods. We will then employ Principal Components Analysis (PCA) through the scikit-learn package. Finally, we’ll combine the two (PCA+Kmeans) models to reach an even better insight about customers. 
 
 ![2](img/2.png)
 
@@ -31,7 +31,7 @@ Once segmented, customers’ behavior will require some interpretation. And we w
 
 
 ## Elastic Modeling
-In this next step We will do elastic modeling by calculating purchase probability elasticity, brand choice own price elasticity, brand choice cross-price elasticity, and purchase quantity elasticity. We will employ linear regressions and logistic regressions. 
+In this next step, we will do elastic modeling by calculating purchase probability elasticity, brand choice own price elasticity, brand choice cross-price elasticity, and purchase quantity elasticity. We will employ linear regressions and logistic regressions. 
 
 ## Predict Future Behavior
 Finally, we’ll leverage the power of Deep Learning to predict future behavior using Feed Forward Neural Network.
