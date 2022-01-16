@@ -17,7 +17,7 @@ I have used both hierarchical and flat clustering techniques, ultimately focusin
 
 
 ## Segment Interpretation
-Once segmented, customers’ behavior will require some interpretation. And I have used the descriptive statistics by brand and by segment and visualizing the findings. Through the descriptive analysis, I formed hypotheses about the segments, thus ultimately setting the ground for the subsequent modeling.
+Once segmented, customers’ behavior will require some interpretation. And I have used the descriptive statistics by brand and by segment and visualized the findings. Through the descriptive analysis, I formed hypotheses about the segments, thus ultimately setting the ground for the subsequent modeling.
 
 ![10](img/10.png)
 
