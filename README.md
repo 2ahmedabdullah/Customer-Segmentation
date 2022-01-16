@@ -31,7 +31,7 @@ Once segmented, customers’ behavior will require some interpretation. And I ha
 
 
 ## Elastic Modeling
-In this next step, I have done elastic modeling by calculating purchase probability elasticity, brand choice own price elasticity, brand choice cross-price elasticity, and purchase quantity elasticity. We will employ linear regressions and logistic regressions. 
+In this step, I have done elastic modeling by calculating purchase probability elasticity, brand choice own price elasticity, brand choice cross-price elasticity, and purchase quantity elasticity. We will employ linear regressions and logistic regressions. 
 
 ## Predict Future Behavior
 Finally, I leveraged the power of Deep Learning to predict future behavior using Feed Forward Neural Network.
