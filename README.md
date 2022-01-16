@@ -13,27 +13,27 @@ Perform cluster analysis and dimensionality reduction to segment customers.
 I have used both hierarchical and flat clustering techniques, ultimately focusing on the K-means algorithm. Along the way, I have also visualized the data appropriately to understand the methods. Ultimately, I employed Principal Components Analysis (PCA) through the scikit-learn package. Finally, combined the two (PCA+Kmeans) models to obtain a better segmentation. 
 
 <p align="center">
-   <img src="2.png">
+   <img src="img/2.png">
 </p>
 
 <p align="center">
-   <img src="3.png">
+   <img src="img/3.png">
 </p>
 
 <p align="center">
-   <img src="6.png">
+   <img src="img/6.png">
 </p>
 
 <p align="center">
-   <img src="7.png">
+   <img src="img/7.png">
 </p>
 
 <p align="center">
-   <img src="8.png">
+   <img src="img/8.png">
 </p>
 
 <p align="center">
-   <img src="9.png">
+   <img src="img/9.png">
 </p>
 
 
@@ -42,23 +42,23 @@ I have used both hierarchical and flat clustering techniques, ultimately focusin
 Once segmented, customers’ behavior will require some interpretation. And I have used the descriptive statistics by brand and by segment and visualized the findings. Through the descriptive analysis, I formed hypotheses about the segments, thus ultimately setting the ground for the subsequent modeling.
 
 <p align="center">
-   <img src="10.png">
+   <img src="img/10.png">
 </p>
 
 <p align="center">
-   <img src="11.png">
+   <img src="img/11.png">
 </p>
 
 <p align="center">
-   <img src="12.png">
+   <img src="img/12.png">
 </p>
 
 <p align="center">
-   <img src="13.png">
+   <img src="img/13.png">
 </p>
 
 <p align="center">
-   <img src="14.png">
+   <img src="img/14.png">
 </p>
 
 
