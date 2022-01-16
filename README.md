@@ -2,7 +2,9 @@
 
 Customer segmentation is the practice of dividing a company's customers into groups that reflect similarity among customers in each group.
 
-![1](1.png)
+<p align="center">
+   <img src="1.png">
+</p>
 
 
 ## Customer-Segmentation
