@@ -1,3 +1,10 @@
+## Customer Segmentation Overview
+
+Customer segmentation is the practice of dividing a company's customers into groups that reflect similarity among customers in each group.
+
+![1](1.png)
+
+
 ## Customer-Segmentation
 
 Perform cluster analysis and dimensionality reduction to segment customers.
